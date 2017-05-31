@@ -1,0 +1,1935 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript and Civil Rights - Marcy Sutton</title>
+
+		<meta name="description" content="JavaScript and Civil Rights">
+		<meta name="author" content="Marcy Sutton">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:400,700" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night-bright.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/theme/marcysutton.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-background-image="img/handshake.png" data-background-size="cover" data-background-color="#fff" data-state="title-slide">
+          <h2 class="offscreen">Image: handshake with typography encouraging good human behavior</h2>
+          <aside class="notes">
+          Respect. Inclusion. Collaboration. Participation. Diversity. Privacy. Support. These are some of the issues not just of our time, but all time.
+          </aside>
+        </section>
+
+				<section data-state="title-slide">
+          <h1>JavaScript <br>and Civil Rights</h1>
+					<p>Marcy Sutton – Bellingham, WA, USA</p>
+          <p><a href="http://marcysutton.com/web-rebels">http://marcysutton.com/web-rebels</a> – <a href="https://twitter.com/marcysutton">@marcysutton</a></p>
+          <aside class="notes">
+          Hi, I'm Marcy Sutton, and I care about people. I'm here talk to you about an important topic affecting all of us: Civil Rights, and how we can protect them as JavaScript developers.
+          </aside>
+				</section>
+
+        <section>
+          <p class="fancy">What are Civil Rights?</p>
+          <h2 class="altHeadline">The rights of individuals to receive equal treatment – and to be free from unfair treatment or discrimination</h2>
+        </section>
+
+        <section>
+          <h2>Aspects of Civil Rights</h2>
+          <ul>
+            <li>Safety</li>
+            <li>Physical &amp; mental integrity</li>
+            <li>Protection from discrimination</li>
+            <li>Privacy</li>
+            <li>Freedom of speech</li>
+          </ul>
+          <aside class="notes">
+          You know what doesn't belong here? Hatred. Hate speech gets people killed. Stand up against hate when it has been normalized, get killed on a train. Or elsewhere. Claiming freedom of speech for hate speech is false equivalence. They are not equal, and it is my opinion that hate has no place in civil rights.
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="altHeadline">Equal protection <br>under the law</h2>
+          <h3 class="h2-style fragment">People fought for this</h3>
+        </section>
+
+        <section data-background-image="img/civil-rights-for-all.jpg" data-state="title-slide">
+          <h2 class="offscreen">Equal rights for all</h2>
+          <aside class="notes">
+          Picketing for fair housing in New Jersey, 1960's. What Dr. King fought for. We cannot forget his legacy–in fact, there are streets across America and abroad named after Dr. King.
+
+          http://archive.northjersey.com/news/teaneck-woman-among-the-last-remaining-pioneers-of-north-jersey-s-civil-rights-movement-1.448116</aside>
+        </section>
+
+        <section data-background-image="img/equal-jobs-and-opportunities.jpg" data-state="title-slide">
+          <h2 class="offscreen">Bettye Lane - Equal Rights and Opportunities March in Manhattan</h2>
+          <aside class="notes">
+            American photojournalist of the feminist, civil rights and gay rights movements
+
+            http://blog.aarp.org/2012/09/24/bettye-lane-a-feminist-photojournalists-arresting-images/
+          </aside>
+        </section>
+
+        <section data-background-image="img/european-disability-forum.jpg" data-transition="none" data-state="title-slide">
+          <h2 class="offscreen">Nothing about us without us-protest by the European Disability Forum</h2>
+          <aside class="notes">
+          Protest in front of European Parliament calling on the Internal Market Committee of European Parliament to adopt a more ambitious position for disability legislation in Brussels
+
+          https://www.neweurope.eu/article/people-disabilities-protest-better-european-accessibility-act/</aside>
+        </section>
+
+        <section>
+          <p class="snug"><strong>Protecting our users’ rights to</strong></p>
+          <h2 class="h1-style">Access, safety <br>and privacy</h2> 
+          <aside class="notes">We have a responsibility to honor our users' civil rights to access, security and privacy</aside>
+        </section>
+
+        <section data-background-image="img/swiss-army-knife.jpg" data-background-position="90% 80%" data-background-size="25%" data-transition="none" data-state="light-background">
+          <h2 class="h1-style">JavaScript</h2>
+          <ul class="larger">
+            <li>Ubiquitous</li>
+            <li>Pivotal</li>
+            <li>Modern</li>
+          </ul>
+        </section>
+
+        <section data-transition="none" data-state="light-background">
+          <h2 class="h1-style">Today</h2>
+          <h3 class="altHeadline">How JavaScript applies to our users’:</h3>
+          <ul>
+            <li>Accessibility</li>
+            <li>Safety</li>
+            <li>Privacy</li>
+            <li>Security</li>
+            <li>Freedom</li>
+          </ul>
+          <aside class="notes">
+          I can only attempt to do this topic justice. We won't be able to cover it all. But my perspective is accessibility is a civil right, I recognized that there's more we can do to protect these things as developers.
+          </aside>
+        </section>
+
+        <section data-state="light-background hide-footer">
+          <h2 class="h1-style">Accessibility is:</h2>
+          <h3 class="h2-style">Freedom from discrimination</h3>
+          <aside class="notes">
+          Freedom of movement and independent living, privacy in your own affairs (think: banking). Accessibility is inhertently political, and in addition to "doing the right thing", people with disabilities around the world lean on laws that protect their rights.
+          </aside>
+        </section>
+
+        <section data-background-image="img/traveling-with-disabilities-norway.jpg" data-state="hide-footer" data-background-size="contain" data-background-color="#ccc">
+          <h2 class="offscreen">Accessibility is about:</h2>
+          <p class="offscreen">Barrier-free environments</p>
+        </section>
+
+        <section data-state="light-background hide-footer">
+          <h2 class="h1-style">Web Accessibility is:</h2>
+          <blockquote>
+            <h3 class="altHeadline">The inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities</h3>
+          </blockquote>
+          <aside class="notes">
+            It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities. Indeed, the UN Convention on the Rights of Persons with Disabilities recognizes access to information and communications technologies, including the Web, as a basic human right.
+          </aside>
+        </section>
+
+        <section data-state="light-background hide-footer">
+          <h2>Disability: what’s that about?</h2>
+          <p><a href="http://webaim.org/intro/#people">http://webaim.org/intro/#people</a></p>
+          <ul>
+            <li class="fragment">Visual</li>
+            <li class="fragment">Hearing</li>
+            <li class="fragment">Motor/Physical</li>
+            <li class="fragment">Cognitive</li>
+          </ul>
+        </section>
+
+        <section data-state="light-background hide-footer">
+          <h2 class="h1-style">It could be you</h2>
+          <img data-src="img/injury.png" alt="Spectrum of disability from permanent to situational" style="max-height: 400px;">
+          <p class="subhead"><strong>Microsoft Inclusive Design Toolkit</strong><br>
+          <a href="http://bit.ly/microsoft-inclusive-toolkit">http://bit.ly/microsoft-inclusive-toolkit</a></p>
+          <aside class="notes">
+          A holistic approach to accessibility makes the web better for everyone.
+
+          Highlights the duality of this talk–it's about our users, but unlike typical usability–it's also about us.
+          </aside>
+        </section>
+
+        <section data-state="light-background">
+          <h2 class="h1-style">Put your values <br>to work</h2>
+          <h3 class="altHeadline">and help people</h3>
+          <aside class="notes">
+            As technologists, every interface or service we build can impact people's rights for better or worse.
+          </aside>
+        </section>
+
+        <section data-state="light-background hide-footer">
+          <h3 class="h1-style">Poor Accessibility 👎🏾</h3>
+          <iframe title="VirginAmerica.com VoiceOver Demo 2014" width="1280" height="720" src="https://www.youtube-nocookie.com/embed/8ZbYJSqE0EM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section data-state="light-background hide-footer">
+          <h3 class="h1-style">Better Accessibility 👍🏾</h3>
+          <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/eO27SZz1uOI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen title="Virgin America 2017 – Voiceover Screen Reader Demo"></iframe>
+        </section>
+
+        <section>
+          <h3 class="h1-style">UI Considerations</h3>
+          <ul>
+            <li>Accessible HTML</li>
+            <li>Keyboard support</li>
+            <li>Focus management</li>
+            <li>Localization</li>
+            <li>Screen reader updates</li>
+          </ul>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug">Accessibility &amp; JS</h3>
+          <h4 class="altHeadline">Keyboard events</h4>
+          <figure class="code">
+          <pre><code class="html">
+  &lt;button onclick="handleClick('close')">Close&lt;/button>
+          </code></pre>
+          </figure>
+          <figure class="code">
+          <pre><code class="javascript">  var handleClick = (action) => {
+    switch (action) {
+      case 'close':
+        closeThingy()
+        break
+    }
+  }
+          </code></pre>
+          </figure>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug">Accessibility &amp; JS</h3>
+          <h4 class="altHeadline">Custom controls</h4>
+          <figure class="code">
+          <pre><code class="html">
+  &lt;div onkeydown="handleClick('close')" onclick="handleClick('close')"
+       role="button" tabindex="0">Close&lt;/div>
+          </code></pre>
+          </figure>
+          <figure class="code">
+          <pre><code class="javascript">  var handleClick = (action) => {
+    switch (action) {
+      case 'close':
+        closeThingy()
+        break
+    }
+  }
+          </code></pre>
+          </figure>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug">WAI-ARIA</h3>
+          <h4 class="altHeadline">Standard attributes for specifying a11y information</h4>
+          <figure class="table">
+          <dl>
+            <dt>Role</dt>
+            <dd>What does this thing do?<br>
+            <code>&lt;div <span>role="checkbox"</span> tabindex="0" &hellip;</code></dd>
+            <dt>State</dt>
+            <dd>What state is it in?<br>
+            <code>&lt;div <span>aria-checked="true"</span> role="checkbox" &hellip;</code></dd>
+            <dt>Property</dt>
+            <dd>What’s the nature of it?<br>
+            <code>&lt;div <span>aria-label="Subscribe"</span> role="checkbox" &hellip;</code></dd>
+          </dl>
+          </figure>
+          <aside class="notes">
+          WICG Accessibility Object Model https://github.com/WICG/aom
+          </aside>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug">Browser Debugging</h3>
+          <figure style="margin-bottom:0;">
+          <figcaption><a href="http://bit.ly/chrome-a11y">http://bit.ly/chrome-a11y</a></figcaption>
+          <img data-src="img/chrome-a11y-inspector-crop.png" alt="Chrome Accessibility Inspector" class="plain">
+          </figure>
+          <aside class="notes">
+          Make sure you can tab onto interactive controls! Screen readers have other ways of navigating
+          </aside>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug">Testing for Accessibility</h3>
+          <figure class="code fullWidth">
+            <figcaption>Focus Management with Selenium Webdriver</figcaption>
+            <pre><code class="javascript">
+ describe('bottom sheet view', function() {
+  beforeEach(function() {
+    // click on share button
+    element(by.css('[data-qa-sharebutton]')).click();
+  });
+  it('should focus on the first item', function() {
+    // verify focus was sent into bottom sheet
+    element.all(by.css('[data-qa-bottomsheet]'))
+    .then(function(items) {
+       let id = driver.switchTo().activeElement().getAttribute('id');
+       expect(items[0].getAttribute('id')).toEqual(id);
+    });
+  });
+            </code></pre>
+          </figure>
+          <aside class="notes">
+          Test for things like keyboard support and focus management, accessible states with ARIA, text alternatives, etc.
+          </aside>
+        </section>
+
+        <section data-background-image="img/axe-core-npm.png" data-state="hide-footer">
+          <h3 class="offscreen">That brings us to axe-core on npm</h3>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug">Automated Testing with <img data-src="img/axe.svg" style="background-color: rgba(255, 255, 255, 0.9); padding: 5px; margin: 0 0 -10px; width: 200px;" class="plain" alt="aXe"></h3>
+          <figure class="code">
+          <figcaption class="snug"><a href="https://npmjs.com/package/axe-core">https://npmjs.com/package/axe-core</a></figcaption>
+          <pre><code class="bash">
+  npm install axe-core
+          </code></pre>
+          <pre><code class="javascript">
+  axe.run(document, {}, (error, results) => {
+    expect(results.violations).toBe(0)
+  }
+          </code></pre>
+          </figure>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug altHeadline">aXe-WebdriverJS</h3>
+          <figure class="code">
+          <figcaption class="snug"><a href="https://npmjs.com/package/axe-webdriverjs">https://npmjs.com/package/axe-webdriverjs</a></figcaption>
+          <pre><code class="javascript">
+  var AxeBuilder = require('axe-webdriverjs'),
+      WebDriver = require('selenium-webdriver');
+ 
+  var driver = new WebDriver.Builder()
+    .forBrowser('chrome').build();
+ 
+  driver
+    .get('https://localhost:4000')
+    .then(function (done) {
+      AxeBuilder(driver)
+        .analyze(function (results) {
+          expect(results.violations.length).toBe(0);
+          done();
+        });
+    });
+          </code></pre>
+          </figure>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style snug altHeadline">aXe-core results object</h3>
+          <figure class="code fullWidth">
+            <figcaption class="snug"><a href="https://github.com/dequelabs/axe-core/blob/develop/doc/API.md">https://github.com/dequelabs/axe-core/blob/develop/doc/API.md</a></figcaption>
+            <pre class="smaller"><code class="javascript">
+  Accessibility Violations:  10
+[ { description: 'Ensures buttons have discernible text',
+    help: 'Buttons must have discernible text',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/button-name?application=webdriverjs',
+    id: 'button-name',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'non-empty-if-present',
+              impact: 'critical',
+              message: 'Element has a value attribute and the value attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-value',
+              impact: 'critical',
+              message: 'Element has no value attribute or the value attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: '',
+              id: 'button-has-visible-text',
+              impact: 'critical',
+              message: 'Element does not have inner text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 7 ],
+         html: '&lt;button class="ui-datepicker-trigger" type="button">\n\t\t\t\t\t\t  <!-- <img title="..." alt="..." src="/redesign/assets/demo-sites/mars/images/calendar.png"> -->\n\t\t\t\t\t\t&lt;/button>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#route0 > .wrapper.departure-date > button:nth-of-type(2)',
+            [length]: 1 ] },
+       [length]: 1 ],
+    tags:
+     [ 'cat.name-role-value',
+       'wcag2a',
+       'wcag412',
+       'section508',
+       'section508.22.a',
+       [length]: 5 ] },
+  { description: 'Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds',
+    help: 'Elements must have sufficient color contrast',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/color-contrast?application=webdriverjs',
+    id: 'color-contrast',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 4.49,
+                 fgColor: '#acbad0',
+                 fontSize: '12.0pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 4.49 (foreground color: #acbad0, background color: #344b6e, font size: 12.0pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '<h2 style="color:#acbad0;">A trip to Mars starts in your imagination. Are you bold enough, brave enough, <strong>crazy enough?</strong> We are. You belong on Mars with crazies like us. Most of us don\'t bite. Much.</h2>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#left-column > div:nth-of-type(1) > h2', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 4.31,
+                 fgColor: '#ff9999',
+                 fontSize: '13.5pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 4.31 (foreground color: #ff9999, background color: #344b6e, font size: 13.5pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;h3>Be Bold...&lt;/h3>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#vap-plan > a > h3', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 4.49,
+                 fgColor: '#acbad0',
+                 fontSize: '9.0pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 4.49 (foreground color: #acbad0, background color: #344b6e, font size: 9.0pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;p>Step out of your comfort zone, and into a rocket with enough fuel to blast a Manhattan-sized crater if it explodes. But it won\'t. Probably.&lt;br>\n&nbsp; &lt;/p>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#vap-plan > p:nth-of-type(2)', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 1.87,
+                 fgColor: '#067ab4',
+                 fontSize: '13.5pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 1.87 (foreground color: #067ab4, background color: #344b6e, font size: 13.5pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;h3>Countdown...&lt;/h3>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#vap-book > a > h3', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 4.49,
+                 fgColor: '#acbad0',
+                 fontSize: '9.0pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 4.49 (foreground color: #acbad0, background color: #344b6e, font size: 9.0pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;p>If you\'re serious about traveling to Mars - really serious - then &lt;a href="/demo/mars/mars2?a=last_will">prepare your last will and testament&lt;/a>, and book a trip! &lt;/p>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#vap-book > p:nth-of-type(2)', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 2.83,
+                 fgColor: '#46a546',
+                 fontSize: '13.5pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 2.83 (foreground color: #46a546, background color: #344b6e, font size: 13.5pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;h3>Blast Off!&lt;/h3>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#vap-travel > a > h3', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data:
+               { bgColor: '#344b6e',
+                 contrastRatio: 4.49,
+                 fgColor: '#acbad0',
+                 fontSize: '9.0pt',
+                 fontWeight: 'normal',
+                 missingData: [ [length]: 0 ] },
+              id: 'color-contrast',
+              impact: 'critical',
+              message: 'Element has insufficient color contrast of 4.49 (foreground color: #acbad0, background color: #344b6e, font size: 9.0pt, font weight: normal)',
+              relatedNodes:
+               [ { html: '&lt;body class="public-en" data-twttr-rendered="true">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;p>Expect violent turbulence, bone-crushing g-forces, muscle atrophy, and certain death (hey, everyone\'s death is certain at some point, right?).&lt;br>\n&nbsp; &lt;/p>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#vap-travel > p:nth-of-type(2)', [length]: 1 ] },
+       [length]: 7 ],
+    tags: [ 'cat.color', 'wcag2aa', 'wcag143', [length]: 3 ] },
+  { description: 'Ensures every id attribute value is unique',
+    help: 'id attribute value must be unique',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/duplicate-id?application=webdriverjs',
+    id: 'duplicate-id',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: 'control-panel',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: control-panel',
+              relatedNodes:
+               [ { html: '&lt;div id="control-panel" class="container-fluid-full">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loggedin > .container-fluid-full',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;div id="control-panel" class="container-fluid-full">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loginnow > .container-fluid-full',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'left-control-nav',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: left-control-nav',
+              relatedNodes:
+               [ { html: '&lt;nav id="left-control-nav" class="pull-left">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loggedin > .container-fluid-full > .container > .span5.left-first.pull-left > nav',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;nav id="left-control-nav" class="pull-left">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loginnow > .container-fluid-full > .container > .span5.left-first.pull-left > nav',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'search-bar',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: search-bar',
+              relatedNodes:
+               [ { html: '&lt;div id="search-bar" class="pull-left">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loggedin > .container-fluid-full > .container > .span5.left-first.pull-left > div',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;div id="search-bar" class="pull-left">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loginnow > .container-fluid-full > .container > .span5.left-first.pull-left > div',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'search',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: search',
+              relatedNodes:
+               [ { html: '&lt;form id="search" action="/demo/mars/mars2" method="get">\n\t\t\t\t\t\t    &lt;input type="hidden" name="fn" value="Search">\t\t\t\t\t\t  \n\t\t\t\t\t\t\t&lt;input type="text" class="search" name="query" placeholder="search">\n\t\t\t\t\t\t\t&lt;input type="submit" class="control-search">\n\t\t\t\t\t\t&lt;/form>',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loggedin > .container-fluid-full > .container > .span5.left-first.pull-left > div > form',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;form id="search" action="/demo/mars/mars2" method="get">\n\t\t\t\t\t\t    &lt;input type="hidden" name="fn" value="Search">\t\t\t\t\t\t  \n\t\t\t\t\t\t\t&lt;input type="text" class="search" name="query" placeholder="search">\n\t\t\t\t\t\t\t&lt;input type="submit" class="control-search">\n\t\t\t\t\t\t&lt;/form>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loginnow > .container-fluid-full > .container > .span5.left-first.pull-left > div > form',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'right-control-nav',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: right-control-nav',
+              relatedNodes:
+               [ { html: '&lt;nav id="right-control-nav" class="pull-right">',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loggedin > .container-fluid-full > .container > .span7.pull-right > .pull-right',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;nav id="right-control-nav" class="pull-right" style="display: inline;">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loginnow > .container-fluid-full > .container > .span7.pull-right > .pull-right',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'vap-section',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: vap-section',
+              relatedNodes:
+               [ { html: '&lt;div id="vap-section">',
+                   target: [ '#left-column > div:nth-of-type(2)', [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;div id="vap-section">\n&lt;h1 style="color:#eee;">Destination Mars &lt;/h1>\n\t&lt;h2 style="color:#acbad0;">A trip to Mars starts in your imagination. Are you bold enough, brave enough, &lt;strong>crazy enough?&lt;/strong> We are. You belong on Mars with crazies like us. Most of us don\'t bite. Much.&lt;/h2>&lt;/div>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#left-column > div:nth-of-type(1)', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'nCountries',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: nCountries',
+              relatedNodes:
+               [ { html: '&lt;input type="hidden" name="nCountries" value="1" id="nCountries">',
+                   target: [ '#passfinder > input:nth-of-type(4)', [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;input type="hidden" id="nCountries" name="nCountries">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#select-country > input', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'passenger-select',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: passenger-select',
+              relatedNodes:
+               [ { html: '&lt;div id="passenger-select" class="widget-container middle">',
+                   target: [ '#passfinder > div:nth-of-type(2)', [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;div id="passenger-select" class="widget-container middle">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#form1 > div:nth-of-type(2)', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'passengers',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: passengers',
+              relatedNodes:
+               [ { html: '&lt;div id="passengers">',
+                   target:
+                    [ '#passfinder > div:nth-of-type(2) > .interior-container > div',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;div id="passengers">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#form1 > div:nth-of-type(2) > .interior-container > div:nth-of-type(2)',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'traveler0',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: traveler0',
+              relatedNodes:
+               [ { html: '&lt;select id="traveler0" class="traveler-type" name="paxAge0">',
+                   target:
+                    [ '#r-passenger0 > .wrapper.age-range > .traveler-type',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;select id="traveler0" class="traveler-type">\n\t\t\t\t\t\t\t\t\t\t&lt;option value="0">Adult (26+)&lt;/option>\n\t\t\t\t\t\t\t\t\t\t&lt;option value="1">Youth (12-25)&lt;/option>\n\t\t\t\t\t\t\t\t\t\t&lt;option value="2">Child (4-11)&lt;/option>\n\t\t\t\t\t\t\t\t\t\t&lt;option value="3">Senior (60+)&lt;/option>\n\t\t\t\t\t\t\t\t\t&lt;/select>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#passenger0 > .wrapper.age-range > .traveler-type',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'age0',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: age0',
+              relatedNodes:
+               [ { html: '&lt;select id="age0" name="youthAge0" class="age">',
+                   target: [ '#r-passenger0 > .wrapper.youth-age > .age', [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;select id="age0" class="age">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#passenger0 > .wrapper.youth-age > .age', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'default',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: default',
+              relatedNodes:
+               [ { html: '&lt;a target="player" data-text="Why Mars died" class="fader first" href="http://www.youtube.com/embed/oC31pqk9sak?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" id="default">&lt;/a>',
+                   target:
+                    [ '#video-box > .interior-container > .vid-nav > a:nth-of-type(2)',
+                      [length]: 1 ] },
+                 { html: '&lt;a target="player" data-text="The world that never was" class="fader first" href="http://www.youtube.com/embed/JgMXPXdqJn8?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" id="default">&lt;/a>',
+                   target:
+                    [ '#video-box > .interior-container > .vid-nav > a:nth-of-type(3)',
+                      [length]: 1 ] },
+                 [length]: 2 ] },
+            [length]: 1 ],
+         html: '&lt;a target="player" data-text="Life was possible on Mars" class="fader first active" href="http://www.youtube.com/embed/OagLGti_hTE?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" id="default">&lt;/a>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#video-box > .interior-container > .vid-nav > .fader.first.active',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: 'ui-datepicker-div',
+              id: 'duplicate-id',
+              impact: 'critical',
+              message: 'Document has multiple elements with the same id attribute: ui-datepicker-div',
+              relatedNodes:
+               [ { html: '&lt;div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">&lt;/div>',
+                   target:
+                    [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > div:nth-of-type(10)',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 1 ],
+         html: '&lt;div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">&lt;/div>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > div:nth-of-type(9)',
+            [length]: 1 ] },
+       [length]: 13 ],
+    tags: [ 'cat.parsing', 'wcag2a', 'wcag411', [length]: 3 ] },
+  { description: 'Ensures &lt;iframe> and &lt;frame> elements contain a non-empty title attribute',
+    help: 'Frames must have title attribute',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/frame-title?application=webdriverjs',
+    id: 'frame-title',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;iframe width="365" height="205" name="player" id="player" src="https://www.youtube.com/embed/OagLGti_hTE?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder="0" allowfullscreen="" cd_frame_id_="cff1794f3ec5c01fd7a128a35718c031">&lt;/iframe>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#player', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;iframe id="fafbba78" name="f2bc5e72d" scrolling="no" style="border: none; overflow: hidden; height: 62px; width: 292px;" class="fb_ltr" src="/assets/demo-sites/mars/js/likebox.html" cd_frame_id_="555346de1cca73b48cf446ddfbe19cab">&lt;/iframe>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#fafbba78', [length]: 1 ] },
+       [length]: 2 ],
+    tags:
+     [ 'cat.text-alternatives',
+       'wcag2a',
+       'wcag241',
+       'section508',
+       'section508.22.i',
+       [length]: 5 ] },
+  { description: 'Ensures every HTML document has a lang attribute',
+    help: '&lt;html> element must have a lang attribute',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/html-has-lang?application=webdriverjs',
+    id: 'html-has-lang',
+    impact: 'serious',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-lang',
+              impact: 'serious',
+              message: 'The &lt;html> element does not have a lang attribute',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         html: '&lt;html class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths deque-axe-is-ready">',
+         impact: 'serious',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready',
+            [length]: 1 ] },
+       [length]: 1 ],
+    tags: [ 'cat.language', 'wcag2a', 'wcag311', [length]: 3 ] },
+  { description: 'Ensures &lt;img> elements have alternate text or a role of none or presentation',
+    help: 'Images must have alternate text',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/image-alt?application=webdriverjs',
+    id: 'image-alt',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-alt',
+              impact: 'critical',
+              message: 'Element does not have an alt attribute',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 6 ],
+         html: '&lt;img src="/assets/demo-sites/mars/js/seg" width="1" height="1">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > div:nth-of-type(1) > img:nth-of-type(3)',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-alt',
+              impact: 'critical',
+              message: 'Element does not have an alt attribute',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 6 ],
+         html: '&lt;img src="/assets/demo-sites/mars/images/mars-spaceman.jpg" class="" width="210" height="120">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#vertical-carousel > .carousel > ul > li:nth-of-type(1) > a > img',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-alt',
+              impact: 'critical',
+              message: 'Element does not have an alt attribute',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 6 ],
+         html: '&lt;img src="/assets/demo-sites/mars/images/mars-spaceman.jpg" class="" width="210" height="120">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#vertical-carousel > .carousel > ul > li:nth-of-type(8) > a > img',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-alt',
+              impact: 'critical',
+              message: 'Element does not have an alt attribute',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 6 ],
+         html: '&lt;img src="/assets/demo-sites/mars/images/mars-spaceman.jpg" class="" width="210" height="120">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#vertical-carousel > .carousel > ul > li:nth-of-type(15) > a > img',
+            [length]: 1 ] },
+       [length]: 4 ],
+    tags:
+     [ 'cat.text-alternatives',
+       'wcag2a',
+       'wcag111',
+       'section508',
+       'section508.22.a',
+       [length]: 5 ] },
+  { description: 'Ensures every form element has a label',
+    help: 'Form elements must have labels',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/label?application=webdriverjs',
+    id: 'label',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'implicit-label',
+              impact: 'critical',
+              message: 'Form element does not have an implicit (wrapped) &lt;label>',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'explicit-label',
+              impact: 'critical',
+              message: 'Form element does not have an explicit &lt;label>',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;input type="text" class="search" name="query" placeholder="search">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.js.no-flexbox.flexbox-legacy.canvas.canvastext.webgl.no-touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready > .public-en > .loginnow > .container-fluid-full > .container > .span5.left-first.pull-left > div > form > .search',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'implicit-label',
+              impact: 'critical',
+              message: 'Form element does not have an implicit (wrapped) &lt;label>',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'explicit-label',
+              impact: 'critical',
+              message: 'Form element does not have an explicit &lt;label>',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;select name="time0" id="time0" class="select-time" tabindex="4">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#time0', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'implicit-label',
+              impact: 'critical',
+              message: 'Form element does not have an implicit (wrapped) &lt;label>',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'explicit-label',
+              impact: 'critical',
+              message: 'Form element does not have an explicit &lt;label>',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'non-empty-title',
+              impact: 'critical',
+              message: 'Element has no title attribute or the title attribute is empty',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;select id="traveler0" class="traveler-type">\n\t\t\t\t\t\t\t\t\t\t&lt;option value="0">Adult (26+)&lt;/option>\n\t\t\t\t\t\t\t\t\t\t&lt;option value="1">Youth (12-25)&lt;/option>\n\t\t\t\t\t\t\t\t\t\t&lt;option value="2">Child (4-11)&lt;/option>\n\t\t\t\t\t\t\t\t\t\t&lt;option value="3">Senior (60+)&lt;/option>\n\t\t\t\t\t\t\t\t\t&lt;/select>',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target:
+          [ '#passenger0 > .wrapper.age-range > .traveler-type',
+            [length]: 1 ] },
+       [length]: 3 ],
+    tags:
+     [ 'cat.forms',
+       'wcag2a',
+       'wcag332',
+       'wcag131',
+       'section508',
+       'section508.22.n',
+       [length]: 6 ] },
+  { description: 'Ensures links have discernible text',
+    help: 'Links must have discernible text',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/link-name?application=webdriverjs',
+    id: 'link-name',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a class="link" href="demo/mars/#">&lt;i class="icon-menu-home">&lt;/i> &lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target: [ '#main-nav > ul > .first > .link', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a href="/demo/mars/mars2?a=crater_adventure">\n\t\t             &lt;img src="/assets/demo-sites/mars/images/mars-spaceman.jpg" class="" width="210" height="120">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#vertical-carousel > .carousel > ul > li:nth-of-type(1) > a',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a href="/demo/mars/mars2?a=crater_adventure">\n\t\t             &lt;img src="/assets/demo-sites/mars/images/mars-spaceman.jpg" class="" width="210" height="120">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#vertical-carousel > .carousel > ul > li:nth-of-type(8) > a',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a href="/demo/mars/mars2?a=crater_adventure">\n\t\t             &lt;img src="/assets/demo-sites/mars/images/mars-spaceman.jpg" class="" width="210" height="120">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#vertical-carousel > .carousel > ul > li:nth-of-type(15) > a',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a href="/demo/mars/mars2?a=">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#form1 > div:nth-of-type(2) > .interior-container > .re_ajax_p3 > a',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a target="player" data-text="Life was possible on Mars" class="fader first active" href="http://www.youtube.com/embed/OagLGti_hTE?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" id="default">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#video-box > .interior-container > .vid-nav > .fader.first.active',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a target="player" data-text="Why Mars died" class="fader first" href="http://www.youtube.com/embed/oC31pqk9sak?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" id="default">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#video-box > .interior-container > .vid-nav > a:nth-of-type(2)',
+            [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'has-visible-text',
+              impact: 'moderate',
+              message: 'Element does not have text that is visible to screen readers',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-label',
+              impact: 'critical',
+              message: 'aria-label attribute does not exist or is empty',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'aria-labelledby',
+              impact: 'critical',
+              message: 'aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-presentation',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="presentation"',
+              relatedNodes: [ [length]: 0 ] },
+            { data: null,
+              id: 'role-none',
+              impact: 'moderate',
+              message: 'Element\'s default semantics were not overridden with role="none"',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 5 ],
+         html: '&lt;a target="player" data-text="The world that never was" class="fader first" href="http://www.youtube.com/embed/JgMXPXdqJn8?controls=1&amp;showinfo=1&amp;modestbranding=0&amp;wmode=opaque&amp;enablejsapi=1" id="default">&lt;/a>',
+         impact: 'critical',
+         none:
+          [ { data: null,
+              id: 'focusable-no-name',
+              impact: 'serious',
+              message: 'Element is in tab order and does not have accessible text',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         target:
+          [ '#video-box > .interior-container > .vid-nav > a:nth-of-type(3)',
+            [length]: 1 ] },
+       [length]: 8 ],
+    tags:
+     [ 'cat.name-role-value',
+       'wcag2a',
+       'wcag111',
+       'wcag412',
+       'section508',
+       'section508.22.a',
+       [length]: 6 ] },
+  { description: 'Ensures related &lt;input type="radio"> elements have a group and that the group designation is consistent',
+    help: 'Radio inputs with the same name attribute value must be part of a group',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/radiogroup?application=webdriverjs',
+    id: 'radiogroup',
+    impact: 'critical',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: { name: 'widget-type', type: 'radio' },
+              id: 'group-labelledby',
+              impact: 'critical',
+              message: 'All elements with the name "widget-type" do not reference the same element with aria-labelledby',
+              relatedNodes: [ [length]: 0 ] },
+            { data: { failureCode: 'no-legend', name: 'widget-type', type: 'radio' },
+              id: 'fieldset',
+              impact: 'critical',
+              message: 'Fieldset does not have a legend as its first child',
+              relatedNodes:
+               [ { html: '&lt;fieldset>',
+                   target:
+                    [ '#widget-controls > .interior-container > form > fieldset',
+                      [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 2 ],
+         html: '&lt;input type="radio" name="widget-type" id="widget-controls-fares" value="0" checked="checked">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#widget-controls-fares', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: { name: 'route-type', type: 'radio' },
+              id: 'group-labelledby',
+              impact: 'critical',
+              message: 'All elements with the name "route-type" do not reference the same element with aria-labelledby',
+              relatedNodes: [ [length]: 0 ] },
+            { data: { failureCode: 'no-group', name: 'route-type', type: 'radio' },
+              id: 'fieldset',
+              impact: 'critical',
+              message: 'Element does not have a containing fieldset or ARIA group',
+              relatedNodes:
+               [ { html: '&lt;input type="radio" name="route-type" id="route-type-round-trip" value="1">',
+                   target: [ '#route-type-round-trip', [length]: 1 ] },
+                 { html: '&lt;input type="radio" name="route-type" id="route-type-multi-city" value="2">',
+                   target: [ '#route-type-multi-city', [length]: 1 ] },
+                 [length]: 2 ] },
+            [length]: 2 ],
+         html: '&lt;input type="radio" name="route-type" id="route-type-one-way" value="0" checked="checked">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#route-type-one-way', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: { name: 'pass-question-radio', type: 'radio' },
+              id: 'group-labelledby',
+              impact: 'critical',
+              message: 'All elements with the name "pass-question-radio" do not reference the same element with aria-labelledby',
+              relatedNodes: [ [length]: 0 ] },
+            { data:
+               { failureCode: 'no-group',
+                 name: 'pass-question-radio',
+                 type: 'radio' },
+              id: 'fieldset',
+              impact: 'critical',
+              message: 'Element does not have a containing fieldset or ARIA group',
+              relatedNodes:
+               [ { html: '&lt;input type="radio" name="pass-question-radio" id="pass-question-no" value="1" checked="checked">',
+                   target: [ '#pass-question-no', [length]: 1 ] },
+                 [length]: 1 ] },
+            [length]: 2 ],
+         html: '&lt;input type="radio" name="pass-question-radio" id="pass-question-yes" value="0">',
+         impact: 'critical',
+         none: [ [length]: 0 ],
+         target: [ '#pass-question-yes', [length]: 1 ] },
+       [length]: 3 ],
+    tags: [ 'cat.forms', 'best-practice', [length]: 2 ] },
+  { description: 'Ensures tabindex attribute values are not greater than 0',
+    help: 'Elements should not have tabindex greater than zero',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/2.2/tabindex?application=webdriverjs',
+    id: 'tabindex',
+    impact: 'serious',
+    nodes:
+     [ { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'tabindex',
+              impact: 'serious',
+              message: 'Element has a tabindex greater than 0',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         html: '&lt;input type="text" value="" class="city-input ac_input ui-autocomplete-input" autocomplete="off" id="from0" name="from0" tabindex="1" role="textbox" aria-autocomplete="list" aria-haspopup="true">',
+         impact: 'serious',
+         none: [ [length]: 0 ],
+         target: [ '#from0', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'tabindex',
+              impact: 'serious',
+              message: 'Element has a tabindex greater than 0',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         html: '&lt;input type="text" value="" class="city-input ac_input ui-autocomplete-input" autocomplete="off" id="to0" name="to0" tabindex="1" role="textbox" aria-autocomplete="list" aria-haspopup="true">',
+         impact: 'serious',
+         none: [ [length]: 0 ],
+         target: [ '#to0', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'tabindex',
+              impact: 'serious',
+              message: 'Element has a tabindex greater than 0',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         html: '&lt;input size="10" id="deptDate0" name="deptDate0" placeholder="mm/dd/yyyy" value="" tabindex="3" class="hasDatepicker input-dept">',
+         impact: 'serious',
+         none: [ [length]: 0 ],
+         target: [ '#deptDate0', [length]: 1 ] },
+       { all: [ [length]: 0 ],
+         any:
+          [ { data: null,
+              id: 'tabindex',
+              impact: 'serious',
+              message: 'Element has a tabindex greater than 0',
+              relatedNodes: [ [length]: 0 ] },
+            [length]: 1 ],
+         html: '&lt;select name="time0" id="time0" class="select-time" tabindex="4">',
+         impact: 'serious',
+         none: [ [length]: 0 ],
+         target: [ '#time0', [length]: 1 ] },
+       [length]: 4 ],
+    tags: [ 'cat.keyboard', 'best-practice', [length]: 2 ] },
+  [length]: 10 ]
+          </code></pre>
+          </figure>
+        </section>
+
+        <section>
+          <h3 class="h2-style">Learn more about axe-core</h3>
+          <h4 class="h3-style altHeadline"><a href="https://axe-core.org">https://axe-core.org</a></h4>
+        </section>
+
+        <section>
+          <h2 class="h1-style larger">Safety</h2>
+        </section>
+
+        <section data-background-image="img/tweet-telegraph-article.jpg" data-state="hide-footer" data-background-position="top center">
+          <h3 class="offscreen">Telegraph technology article: GIF counts as 'deadly weapon' in seizure-inducing tweet case, court says</h3>
+        </section>
+
+        <section data-state="light-background">
+          <h3 class="h1-style">Motion Sickness Warning</h3>
+        </section>
+
+        <section data-state="light-background hide-footer" data-state="hide-footer" data-background-video="assets/NarrowDesign.mp4" data-background-video-loop="false">
+          <h3 class="offscreen">NarrowDesign.com</h3>
+        </section>
+
+        <section data-state="light-background">
+          <h3 class="h1-style">Provide affordances</h3>
+          <h4 class="altHeadline">To turn off animations/motion</h4>
+          <aside class="notes">Thankfully Twitter made an option to prevent GIF autoplay</aside>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="snug altHeadline"><code>prefers-reduced-motion</code></h3>
+          <h4 class="snug altHeadline">User settings in CSS, JavaScript</h4>
+          <figure class="code">
+            <figcaption><a href="https://webkit.org/blog/7551/responsive-design-for-motion/">https://webkit.org/blog/7551/responsive-design-for-motion/</a></figcaption>
+            <pre><code class="javascript">
+  var motionQuery = matchMedia('(prefers-reduced-motion)');
+  var handleReduceMotionChanged () => {
+    if (motionQuery.matches) {
+      /* adjust motion of 'transition' or 'animation' properties */
+    } else { 
+      /* standard motion */
+    }
+  }
+  motionQuery.addListener(handleReduceMotionChanged);
+  handleReduceMotionChanged(); // trigger once on load if needed
+            </code></pre>
+          </figure>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h2-style">Let Users Decide</h3>
+          <h4 class="altHeadline">Reduced motion on iOS and OSX Sierra</h4>
+          <figure>
+            <img data-src="img/ios-preferences-motion.png" alt="Reduced Motion in Preferences list on iOS" style="max-height: 600px;" class="plain">
+            <img data-src="img/macos-sierra-reduce-motion.jpg" alt="Reduced Motion Preference on OSX Sierra" style="max-width: 700px; max-height: 700px; vertical-align: top; margin: 50px 0 0 30px;" class="plain">
+          </figure>
+        </section>
+
+        <section style="padding-top:0 !important;" data-state="hide-footer">
+          <h3 class="offscreen">Giphy example</h3>
+          <figure>
+            <video data-src="assets/animated-gifs.mp4" title="Giphy animated GIFs demo" controls style="max-width: 90%;"></video>
+          </figure>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h1-style">GifJam</h3>
+          <figure><img data-src="img/gif-jam-chrome.png" alt="Gif JAM Chrome Extension" style="max-width: 90%;"></figure>
+        </section>
+
+        <section style="padding-top:0 !important;" data-state="hide-footer">
+          <h3 class="offscreen">Giphy example with GIF Jam</h3>
+          <figure>
+            <video data-src="assets/giphy-gifjam.mp4" title="Giphy demo with Gif JAM enabled" controls style="max-width: 90%;"></video>
+          </figure>
+        </section>
+
+        <section data-background-image="img/tashasev-autoplay-tweet.jpg" data-background-position="top center" data-state="hide-footer">
+          <h3 class="offscreen">Tweet from @TashasEV: Dear every web developer in the history of ever and all the future to come: Don't auto-play *anything* *ever*</h3>
+          <aside class="notes">
+          Also note the play button GIFs on Twitter
+          </aside>
+        </section>
+
+        <section data-background-image="img/brave-autoplay.png" data-state="hide-footer">
+          <h3 class="offscreen">Brave lets you disable autoplay for sites like CNN.com</h3>
+        </section>
+
+        <section>
+          <h2 class="h1-style larger">Privacy</h2>
+        </section>
+
+        <section>
+          <h3 class="offscreen">Creepy advertising</h3>
+          <figure>
+            <video data-src="assets/Guardian-Autoplay.mov" title="Autoplaying ad in the middle of a Guardian article" style="max-height: 700px;" autoplay loop muted></video>
+          </figure>
+          <aside class="notes">
+          Right after this I saw the same ad on Instagram
+          </aside>
+        </section>
+
+        <section>
+          <h3 class="h2-style">Websites Leak Our Data</h3>
+          <p><a href="http://www.cbsnews.com/news/the-data-brokers-selling-your-personal-information/">http://www.cbsnews.com/news/the-data-brokers-selling-your-personal-information/</a></p>
+          <ul>
+            <li>Tracking cookies</li>
+            <li>Ad networks</li>
+            <li>Measuring behavior</li>
+            <li>Dossiers/profiles</li>
+          </ul>
+          <aside class="notes">
+          <p>Religion, ethnicity, political affiliations, user names, income, and family medical history</p>
+          Data brokers doing it for "commerce". All of this can end up in a file somewhere that's being sold to a prospective employer.
+          The US gov't signed away privacy protections for internet users this year.
+          </aside>
+        </section>
+
+        <section style="padding-top:0 !important;" data-state="hide-footer">
+          <h3 class="offscreen">Disqus</h3>
+          <figure>
+            <video data-src="assets/disqus.mp4" title="Disqus loading with a bunch of requests in Chrome Network panel" controls style="max-width: 90%;"></video>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Free software often means YOU are the product</h2>
+        </section>
+
+        <section data-background-image="img/subvertise.png" data-state="hide-footer">
+          <h2 class="offscreen">Subvertise on npm</h2>
+        </section>
+
+        <section data-background-image="img/shariff-npm.png" data-state="hide-footer">
+          <h2 class="offscreen">Shariff on npm</h2>
+        </section>
+
+        <section data-background-image="img/website-key-tracking-article.jpg" data-background-position="top center" data-state="hide-footer">
+          <h3 class="offscreen">Naked Security: Websites can track us by the way we type – here’s how to stop it</h3>
+          <aside class="notes">
+          https://nakedsecurity.sophos.com/2015/07/30/websites-can-track-us-by-the-way-we-type-heres-how-to-stop-it/
+          </aside>
+        </section>
+
+        <section data-background-image="img/leonie-facebook-tweet.jpg" data-background-position="top center" data-state="hide-footer">
+          <h3 class="offscreen">Tweet from @LeonieWatson: .@Facebook using educated guesses to trap people into confirming they have a disability is *not acceptable!</h3>
+        </section>
+
+        <section data-background-image="img/marco-zehe-AT-detection.png" data-state="hide-footer light-background">
+          <h2 class="offscreen">Marco Zehe: Why screen reader detection on the web is a bad thing</h2>
+          <h3 class="altHeadline textOverlay marco"><a href="https://www.marcozehe.de/2014/02/27/why-screen-reader-detection-on-the-web-is-a-bad-thing/" target="_blank" title="Link opens in a new window">https://www.marcozehe.de/2014/02/27/why-screen-reader-detection-on-the-web-is-a-bad-thing/</a></h3>
+        </section>
+
+        <section data-state="hide-footer">
+          <h3 class="h1-style snug">What you can do</h3>
+          <h4 class="h2-style altHeadline snug">Measure accessible events*</h4>
+          <p><em>* with a public privacy policy &amp; opt-out</em></p>
+          <figure class="code">
+          <pre><code class="javascript">
+  handleKeydown = event => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    this.selectItem(event);
+
+    // add event tracking of keyboard support
+    ga('send', 'event', 'Menu', 'Keydown', 'Select Item');
+  };
+          </code></pre>
+          </figure>
+          <aside class="notes">
+          There are a lot of things we can't track on the web. Like: screen reader usage or JavaScript event bindings.
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="h1-style">Recap</h2>
+          <ul>
+            <li class="fragment">Accessibility is a civil right.</li>
+            <li class="fragment">Safety and privacy, too;</li>
+            <li class="fragment">These are interlinked.</li>
+            <li class="fragment">Our work impacts peoples’ lives!</li>
+            <li class="fragment">We can make a difference. ✌️</li>
+          </ul>
+          <aside class="notes">
+          There are other aspects too, like voting and employment
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="h1-style">Thanks, Web Rebels!</h2>
+          <ul style="list-style: none;">
+            <li style="margin-top: 0.75em;"><img data-src="img/TwitterLogo_white.svg" alt="Twitter" style="width: 1.5em; height: 1.5em; display: inline-block; margin: 0 20px -20px;" class="plain"><a href="https://twitter.com/marcysutton">twitter.com/marcysutton</a></li>
+            <li style="margin-top: 0.75em;"><img data-src="img/github-logomark.svg" alt="Github" style="width: 1.5em; height: 1.5em; display: inline-block; margin: 0 20px -20px;" class="plain"><a href="https://github.com/marcysutton">github.com/marcysutton</a></li>
+          </ul>
+        </section>
+      </div>
+
+			<footer role="contentinfo">
+        <p class="copyright">JavaScript and Civil Rights<br>
+          <a href="http://twitter.com/marcysutton" target="_blank" title="Link opens in a new window">@marcysutton</a> <span aria-hidden="true">/</span> <a href="http://marcysutton.com/web-rebels" target="_blank" title="Link opens in a new window">marcysutton.com/web-rebels</a></p>
+      </footer>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+      
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+        keyboard: {
+          27: function() {} // do something custom when ESC is pressed
+        },
+				// The "normal" size of the presentation, aspect ratio will be preserved
+		    // when the presentation is scaled to fit different resolutions. Can be
+		    // specified using percentage units.
+		    width: 1440,
+		    height: 900,
+
+		    // Factor of the display size that should remain empty around the content
+		    margin: 0,
+
+		    // Bounds for smallest/largest possible scale to apply to content
+		    minScale: 0.2,
+		    maxScale: 1.0,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/accessibility-helpers/accessibility-helpers.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	</body>
+</html>
