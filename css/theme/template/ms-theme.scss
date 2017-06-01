@@ -91,6 +91,7 @@
 
 body {
   background: black url("../../img/earth-at-night.jpg") no-repeat top center;
+  background-size: cover;
   font-family: $mainFont, sans-serif;
 }
 .light-background body {
