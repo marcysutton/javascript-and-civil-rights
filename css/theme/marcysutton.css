@@ -269,6 +269,10 @@ body {
 .reveal h3 strong {
   color: #E3C402; }
 
+.reveal .dark-color {
+  color: #000;
+  text-shadow: none; }
+
 .reveal .larger {
   font-size: 120%; }
 
@@ -412,9 +416,12 @@ body {
   color: #ccc;
   font-family: Menlo, monospace;
   font-size: 2.5em;
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  margin-left: 0; }
   .reveal .large-tag pre code {
     font-size: 1.25em; }
+  .reveal .large-tag a {
+    color: #000; }
 
 .reveal .muted {
   color: #999; }
@@ -525,9 +532,13 @@ body {
 
 .reveal .textOverlay {
   text-align: left; }
+  .reveal .textOverlay.center {
+    text-align: center; }
   .reveal .textOverlay a {
     color: #7e6d01;
     text-decoration: underline; }
+    .reveal .textOverlay a:hover, .reveal .textOverlay a:focus {
+      color: #000; }
   .reveal .textOverlay.marco {
     margin-top: -20%; }
 
@@ -650,10 +661,6 @@ body {
 /*********************************************
  * Slide Styles
  *********************************************/
-.reveal .terminal {
-  font-size: 17px !important;
-  font-family: Menlo, monospace, monospace !important; }
-
 .reveal .layeredFragments {
   position: relative; }
   .reveal .layeredFragments .fragment {
@@ -714,74 +721,6 @@ body {
     display: inline-block;
     margin-right: 0.05em; }
 
-.reveal .interactive-input span[contenteditable] {
-  border-bottom: 4px solid currentColor;
-  display: inline-block;
-  line-height: 1.25;
-  margin-top: 0.25em;
-  min-width: 4.5em;
-  outline: none;
-  text-align: left; }
-
-.reveal .themed-button, .reveal button.reset {
-  background-color: #4285f4;
-  border-radius: 3px;
-  border-width: 0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  padding: 0.25em 0.5em;
-  margin: 1em;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
-  .reveal .themed-button:hover, .reveal button.reset:hover, .reveal .themed-button:focus, .reveal button.reset:focus {
-    background-color: #000;
-    color: #fff; }
-
-.reveal button.reset {
-  background-color: #fff;
-  color: #000;
-  display: inline-block;
-  font-size: 0.65em;
-  margin-top: 0; }
-  .reveal button.reset:hover, .reveal button.reset:focus {
-    background-color: #000;
-    color: #fff; }
-  .reveal button.reset.disabled {
-    display: none; }
-
-.reveal .inline-icon-block .text {
-  display: inline-block;
-  vertical-align: middle; }
-
-.reveal .inline-icon-block .icon {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle; }
-
-.reveal .play button:before {
-  background: transparent;
-  border: 58px solid transparent;
-  border-width: 58px 78px;
-  border-left-color: rgba(255, 255, 255, 0.7);
-  content: "";
-  display: block;
-  margin-top: -8px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transition: 0.5s; }
-
-.reveal .play button:hover:before,
-.reveal .play button:focus:before,
-.reveal .play button:active:before {
-  background: transparent;
-  border-left-color: white; }
-
 .reveal p.byline {
   font-size: 1.25em;
   margin-bottom: 4%; }
@@ -805,48 +744,3 @@ body {
   .reveal .image-headline.black-caption h3 {
     background-color: #000;
     margin: 0; }
-
-/* PIZZA! */
-.timerApp {
-  opacity: 0;
-  display: flex;
-  -webkit-flex: 1;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  transition: all 0.75s; }
-  .timerApp.initialized {
-    opacity: 1; }
-  .timerApp.minimized {
-    align-items: flex-start;
-    justify-content: flex-end; }
-    .timerApp.minimized time {
-      font-size: 1.5em; }
-  .timerApp time {
-    background-color: #000;
-    color: #fff;
-    display: inline;
-    font-family: Menlo, monospace;
-    font-size: 4em;
-    font-weight: normal;
-    padding: 0.25em 0.5em;
-    position: relative; }
-  .timerApp .button.pizza {
-    background-color: lime;
-    color: #000;
-    font-weight: bold;
-    font-size: 2em;
-    margin-top: 1em; }
-  .timerApp .separator {
-    background-color: transparent; }
-
-.reveal section pizza-button {
-  cursor: pointer;
-  padding: 0;
-  margin: 0; }
-  .reveal section pizza-button img {
-    margin: 0;
-    padding: 0; }

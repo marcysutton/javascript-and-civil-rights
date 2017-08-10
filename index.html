@@ -49,7 +49,7 @@
 				<section data-state="title-slide">
           <h1>JavaScript <br>and Civil Rights</h1>
 					<p>Marcy Sutton – Bellingham, WA, USA</p>
-          <p><a href="http://marcysutton.com/webrebels">http://marcysutton.com/webrebels</a> – <a href="https://twitter.com/marcysutton">@marcysutton</a></p>
+          <p><a href="http://marcysutton.com/seattlejs2017">http://marcysutton.com/seattlejs2017</a> – <a href="https://twitter.com/marcysutton">@marcysutton</a></p>
           <aside class="notes">
           Hi, I'm Marcy Sutton, and I care about people. I'm here talk to you about an important topic affecting all of us: Civil Rights, and how we can protect them as JavaScript developers.
           </aside>
@@ -58,19 +58,22 @@
         <section>
           <p class="fancy">What are Civil Rights?</p>
           <h2 class="altHeadline">The rights of individuals to receive equal treatment – and to be free from unfair treatment or discrimination</h2>
+          <aside class="notes">
+          "Some perceive their privilege as rights and see equal rights infringing on their privileges." https://twitter.com/DGMason/status/894889522449797120
+          </aside>
         </section>
 
         <section>
           <h2>Aspects of Civil Rights</h2>
           <ul>
-            <li>Safety</li>
-            <li>Physical &amp; mental integrity</li>
             <li>Protection from discrimination</li>
+            <li>Physical &amp; mental integrity</li>
+            <li>Safety</li>
             <li>Privacy</li>
             <li>Freedom of speech</li>
           </ul>
           <aside class="notes">
-          You know what doesn't belong here? Hatred. Checking out a book at the library, getting killed standing up to bigotry on a train.
+          You know what doesn't belong here? Hatred. Checking out a book at the library, getting killed standing up to bigotry on a train. Having your qualifications doubted because of your gender or age.
           </aside>
         </section>
 
@@ -82,15 +85,15 @@
         <section data-background-image="img/civil-rights-for-all.jpg" data-state="title-slide">
           <h2 class="offscreen">Equal rights for all</h2>
           <aside class="notes">
-          Picketing for fair housing in New Jersey, 1960's. What Dr. King fought for. We cannot forget his legacy–in fact, there are streets across America and abroad named after Dr. King.
+          Picketing for fair housing in New Jersey, 1960's–part of the Civil Rights Movement, the largest social movement of the 20th century. What Dr. King fought for. We cannot forget his legacy–in fact, there are streets across America and abroad named after Dr. King.
 
           http://archive.northjersey.com/news/teaneck-woman-among-the-last-remaining-pioneers-of-north-jersey-s-civil-rights-movement-1.448116</aside>
         </section>
 
-        <section data-background-image="img/equal-jobs-and-opportunities.jpg" data-state="title-slide">
+        <section data-background-image="img/equal-jobs-and-opportunities.jpg" data-state="title-slide" data-background-size="90% auto">
           <h2 class="offscreen">Bettye Lane - Equal Rights and Opportunities March in Manhattan</h2>
           <aside class="notes">
-            American photojournalist of the feminist, civil rights and gay rights movements
+            American photojournalist of the feminist, civil rights and gay rights movements. These were influenced by the Civil Rights Movement for African Americans.
 
             http://blog.aarp.org/2012/09/24/bettye-lane-a-feminist-photojournalists-arresting-images/
           </aside>
@@ -103,6 +106,13 @@
 
           https://www.neweurope.eu/article/people-disabilities-protest-better-european-accessibility-act/</aside>
         </section>
+
+        <!-- <section data-background-image="img/DC-ADAPT.jpg" data-transition="none" data-state="title-slide" data-background-size="90% auto" data-background-color="black">
+          <h2 class="offscreen">Dawn Russell being loaded onto police bus for processing with her fist raised in POWER!</h2>
+          <p style="position: absolute; bottom: -400px;">&copy; DC Adapt</p>
+          <aside class="notes">
+          DC Adapt protesting Medicaid cuts</aside>
+        </section> -->
 
         <section>
           <p class="snug"><strong>Protecting our users’ rights to</strong></p>
@@ -142,9 +152,10 @@
           </aside>
         </section>
 
-        <section data-background-image="img/traveling-with-disabilities-norway.jpg" data-state="hide-footer" data-background-size="contain" data-background-color="#ccc">
+        <section data-background-image="img/boardingramprapidride.jpg" data-state="hide-footer" data-background-size="cover">
           <h2 class="offscreen">Accessibility is about:</h2>
           <p class="offscreen">Barrier-free environments</p>
+          <aside class="notes">https://metrofutureblog.wordpress.com/2013/10/10/metro-transit-a-pioneer-in-transit-accessibility/</aside>
         </section>
 
         <section data-state="light-background hide-footer">
@@ -195,7 +206,8 @@
 
         <section data-state="light-background hide-footer">
           <h3 class="h1-style">Better Accessibility 👍🏾</h3>
-          <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/QxFkp9mHknQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen title="Virgin America 2017 – Voiceover Screen Reader Demo"></iframe>
+          <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/6tmBd9USe6g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen title="Blackboard Learn app with Voiceover"></iframe>
+          <!-- <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/QxFkp9mHknQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen title="Virgin America 2017 – Voiceover Screen Reader Demo"></iframe> -->
         </section>
 
         <section>
@@ -207,6 +219,9 @@
             <li>Localization</li>
             <li>Screen reader updates</li>
           </ul>
+          <aside class="notes">
+          Accessible HTML includes keyboards and screen readers
+          </aside>
         </section>
 
         <section data-state="hide-footer">
@@ -320,7 +335,7 @@
           </code></pre>
           <pre><code class="javascript">
   axe.run(document, {}, (error, results) => {
-    expect(results.violations).toBe(0)
+    expect(results.violations.length).toBe(0)
   }
           </code></pre>
           </figure>
@@ -1697,6 +1712,9 @@
 
         <section data-background-image="img/tweet-telegraph-article.jpg" data-state="hide-footer" data-background-position="top center">
           <h3 class="offscreen">Telegraph technology article: GIF counts as 'deadly weapon' in seizure-inducing tweet case, court says</h3>
+          <aside class="notes">
+          Kurt Eichenwald
+          </aside>
         </section>
 
         <section data-state="light-background">
@@ -1742,6 +1760,11 @@
           </figure>
         </section>
 
+        <section data-background-image="img/mozilla-prefers-reduced-motion.png" data-state="hide-footer" data-background-size="contain">
+          <h2 class="h1-style dark-color" style="margin-right: 340px; position: relative; top: -250px; text-align: right;">Vote!</h2>
+          <figure class="textOverlay center" style="bottom: -70px; position: relative;"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1365045">https://bugzilla.mozilla.org/show_bug.cgi?id=1365045</a></figure>
+        </section>
+
         <section style="padding-top:0 !important;" data-state="hide-footer">
           <h3 class="offscreen">Giphy example</h3>
           <figure>
@@ -1768,7 +1791,7 @@
           </aside>
         </section>
 
-        <section data-background-image="img/brave-autoplay.png" data-state="hide-footer">
+        <section data-background-image="img/brave-autoplay.png" data-state="hide-footer" data-background-position="0 -40px">
           <h3 class="offscreen">Brave lets you disable autoplay for sites like CNN.com</h3>
         </section>
 
@@ -1810,7 +1833,8 @@
         </section>
 
         <section>
-          <h2>Free software often means YOU are the product</h2>
+          <h2>Free software* often means YOU are the product</h2>
+          <h3 class="h4-style altHeadline">*Facebook, Google, Disqus, etc.</h3>
         </section>
 
         <section data-background-image="img/subvertise.png" data-state="hide-footer">
@@ -1873,7 +1897,7 @@
         </section>
 
         <section>
-          <h2 class="h1-style">Thanks, Web Rebels!</h2>
+          <h2 class="h1-style">Thanks, SeattleJS!</h2>
           <ul style="list-style: none;">
             <li style="margin-top: 0.75em;"><img data-src="img/TwitterLogo_white.svg" alt="Twitter" style="width: 1.5em; height: 1.5em; display: inline-block; margin: 0 20px -20px;" class="plain"><a href="https://twitter.com/marcysutton">twitter.com/marcysutton</a></li>
             <li style="margin-top: 0.75em;"><img data-src="img/github-logomark.svg" alt="Github" style="width: 1.5em; height: 1.5em; display: inline-block; margin: 0 20px -20px;" class="plain"><a href="https://github.com/marcysutton">github.com/marcysutton</a></li>
@@ -1883,7 +1907,7 @@
 
 			<footer role="contentinfo">
         <p class="copyright">JavaScript and Civil Rights<br>
-          <a href="http://twitter.com/marcysutton" target="_blank" title="Link opens in a new window">@marcysutton</a> <span aria-hidden="true">/</span> <a href="http://marcysutton.com/webrebels" target="_blank" title="Link opens in a new window">marcysutton.com/webrebels</a></p>
+          <a href="http://twitter.com/marcysutton" target="_blank" title="Link opens in a new window">@marcysutton</a> <span aria-hidden="true">/</span> <a href="http://marcysutton.com/seattlejs2017" target="_blank" title="Link opens in a new window">marcysutton.com/seattlejs2017</a></p>
       </footer>
 		</div>
 

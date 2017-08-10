@@ -338,6 +338,10 @@ body {
   h3 strong {
     color: $linkColor;
   }
+  .dark-color {
+    color: $darkColor;
+    text-shadow: none;
+  }
   .larger {
     font-size: 120%;
   }
@@ -518,9 +522,13 @@ body {
     font-family: $codeFont;
     font-size: 2.5em;
     margin-top: 0.5em;
+    margin-left: 0;
 
     pre code {
       font-size: 1.25em;
+    }
+    a {
+      color: $darkColor;
     }
   }
   .muted {
@@ -675,9 +683,17 @@ body {
   .textOverlay {
     text-align: left;
 
+    &.center {
+      text-align: center;
+    }
+
     a {
       color: darken($linkColor, 20%);
       text-decoration: underline;
+
+      &:hover, &:focus {
+        color: $darkColor;
+      }
     }
     &.marco {
       margin-top: -20%;
@@ -838,10 +854,6 @@ body {
  * Slide Styles
  *********************************************/
 .reveal {
-  .terminal {
-    font-size: $terminalFontSize !important;
-    font-family: $terminalFontFamily !important;
-  }
   .layeredFragments {
     position: relative;
 
@@ -918,83 +930,6 @@ body {
       }
     }
   }
-  .interactive-input span[contenteditable] {
-    border-bottom: 4px solid currentColor;
-    display: inline-block;
-    line-height: 1.25;
-    margin-top: 0.25em;
-    min-width: 4.5em;
-    outline: none;
-    text-align: left
-  }
-  .themed-button {
-    background-color: $buttonColor;
-    border-radius: 3px;
-    border-width: 0;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    color: $buttonTextColor;
-    cursor: pointer;
-    display: inline-block;
-    font-family: $mainFont;
-    font-size: 1em;
-    padding: 0.25em 0.5em;
-    margin: 1em;
-
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-
-    &:hover, &:focus {
-      background-color: $backgroundColor;
-      color: $white;
-    }
-  }
-  button.reset {
-    @extend .themed-button;
-    background-color: $white;
-    color: $backgroundColor;
-    display: inline-block;
-    font-size: 0.65em;
-    margin-top: 0;
-
-    &:hover, &:focus {
-      background-color: $backgroundColor;
-      color: $white;
-    }
-    &.disabled {
-      display: none;
-    }
-  }
-  .inline-icon-block {
-    .text {
-      display:inline-block;
-      vertical-align:middle;
-    }
-    .icon {
-      display:inline-block;
-      margin-left: 10px;
-      vertical-align:middle;
-    }
-  }
-  .play button:before {
-    background: transparent;
-    border: 58px solid transparent;
-    border-width: 58px 78px;
-    border-left-color: rgba(255, 255, 255, 0.7);
-    content: "";
-    display: block;
-    margin-top: -8px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transition: 0.5s;
-  }
-  .play button:hover:before,
-  .play button:focus:before,
-  .play button:active:before {
-    background: transparent;
-    border-left-color: rgba(255, 255, 255, 1);
-  }
   p.byline {
     font-size: 1.25em;
     margin-bottom: 4%;
@@ -1023,64 +958,6 @@ body {
         background-color: #000;
         margin: 0;
       }
-    }
-  }
-}
-/* PIZZA! */
-.timerApp {
-  opacity: 0;
-  display: flex;
-  -webkit-flex: 1;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  transition: all 0.75s;
-
-  &.initialized {
-    opacity: 1;
-  }
-  &.minimized {
-    align-items: flex-start;
-    justify-content: flex-end;
-
-    time {
-      font-size: 1.5em;
-    }
-  }
-
-  time {
-    background-color: #000;
-    color: #fff;
-    display: inline;
-    font-family: Menlo, monospace;
-    font-size: 4em;
-    font-weight: normal;
-    padding: 0.25em 0.5em;
-    position: relative;
-  }
-  .button.pizza {
-    background-color: lime;
-    color: #000;
-    font-weight: bold;
-    font-size: 2em;
-    margin-top: 1em;
-  }
-  .separator {
-    background-color: transparent;
-  }
-}
-.reveal section {
-  pizza-button {
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-
-    img {
-      margin: 0;
-      padding: 0;
     }
   }
 }
