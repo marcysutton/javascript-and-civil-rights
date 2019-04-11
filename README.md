@@ -2,14 +2,15 @@
 [http://marcysutton.github.io/javascript-and-civil-rights/](http://marcysutton.github.io/javascript-and-civil-rights/)
 
 By [Marcy Sutton](http://marcysutton.com)<br>
-Senior Front-End Engineer at [Deque Systems](http://deque.com)
+Head of Learning at [Gatsby](https://gatsbyjs.com)
 
 - twitter: [@marcysutton](https://twitter.com/marcysutton)
 - github: [@marcysutton](https://github.com/marcysutton)
 
-## Presenting at:
-* Web Rebels 2017
+## Presented at:
+* Drupalcon 2019
 * SeattleJS Conference
+* Web Rebels 2017
 
 ## Installation
 
