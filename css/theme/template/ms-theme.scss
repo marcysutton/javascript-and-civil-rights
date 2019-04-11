@@ -222,7 +222,6 @@ body {
     bottom: 0px;
     left: 0;
     font-size: 55%;
-    // font-weight: 700;
     height: auto;
     position: fixed;
     padding-bottom: 30px;
@@ -230,7 +229,6 @@ body {
     width: 100%;
     opacity: 1;
     transition: opacity 0.5s;
-    z-index: 11;
 
     * {
       text-shadow: none;
@@ -560,6 +558,17 @@ body {
       .absolute {
         position: absolute;
         width: 100%;
+      }
+    }
+    &.resources {
+      list-style: none;
+
+      li {
+        margin-top: 0.75em;
+        
+        &.separated {
+          margin-top: 1.5em;
+        }
       }
     }
     &.left-aligned {

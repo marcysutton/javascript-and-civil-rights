@@ -175,8 +175,7 @@ body {
     text-align: left;
     width: 100%;
     opacity: 1;
-    transition: opacity 0.5s;
-    z-index: 11; }
+    transition: opacity 0.5s; }
     .reveal footer * {
       text-shadow: none; }
     .title-slide .reveal footer,
@@ -444,6 +443,12 @@ body {
     .reveal ul.relative .absolute {
       position: absolute;
       width: 100%; }
+  .reveal ul.resources {
+    list-style: none; }
+    .reveal ul.resources li {
+      margin-top: 0.75em; }
+      .reveal ul.resources li.separated {
+        margin-top: 1.5em; }
   .reveal ul.left-aligned {
     list-style: disc;
     text-align: left; }
