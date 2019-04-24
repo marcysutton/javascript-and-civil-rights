@@ -8,6 +8,7 @@ Head of Learning at [Gatsby](https://gatsbyjs.com)
 - github: [@marcysutton](https://github.com/marcysutton)
 
 ## Presented at:
+* Vox Media internal conference
 * Drupalcon 2019
 * SeattleJS Conference
 * Web Rebels 2017

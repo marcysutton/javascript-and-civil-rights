@@ -1,4 +1,6 @@
 /* global module:false */
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 9000;
 	var base = grunt.option('base') || '.';
@@ -32,6 +34,10 @@ module.exports = function(grunt) {
 		},
 		
 		sass: {
+			options: {
+				implementation: sass,
+				sourceMap: false
+			},
 			core: {
 				files: {
 					'css/theme/custom.css': 'css/theme/source/custom.scss',
